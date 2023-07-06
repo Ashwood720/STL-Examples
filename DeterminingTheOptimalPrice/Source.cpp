@@ -11,7 +11,7 @@ typedef vector<int> VecInt;
 
 int main(int argc, char* argv)
 {
-	//////////////INPUT///////////////
+	//////////////INPUT//////////////
 	
 	// *Costs per product
 	int Expense = 1100;
@@ -19,7 +19,7 @@ int main(int argc, char* argv)
 	// *PriceVector is a survey of potential consumers, where they name the price of the product for which they would take it
 	VecInt PriceVector{ 4000, 2500, 3000, 5000, 3500, 2000, 5000, 3200, 1500, 4000, 2000, 4000, 4500, 3000, 5000, 2500, 3500, 2000, 3500, 4000 };
 
-	////////////////////////////////
+	/////////////////////////////////
 
 	sort(PriceVector.begin(), PriceVector.end());
 
@@ -33,7 +33,7 @@ int main(int argc, char* argv)
 		VecUniqied.shrink_to_fit();
 	}
 	const int Size = VecUniqied.size();
-	auto It = VecUniqied.begin();
+	VecInt::iterator It = VecUniqied.begin();
 
 	VecInt Demand(Size);
 
@@ -63,7 +63,7 @@ int main(int argc, char* argv)
 
 		MapPriceProfit.emplace(Profit[i], VecUniqied[i]);
 	}
-	auto MaxProfit = max_element(Profit.cbegin(), Profit.cend());
+	VecInt::const_iterator MaxProfit = max_element(Profit.cbegin(), Profit.cend());
 
 	////////////////////OUTPUT////////////////
 
