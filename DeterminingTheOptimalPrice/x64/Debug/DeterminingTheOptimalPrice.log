@@ -1,0 +1,9 @@
+﻿  Source.cpp
+C:\CppProject\DeterminingTheOptimalPrice\DeterminingTheOptimalPrice\Source.cpp(35,34): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\CppProject\DeterminingTheOptimalPrice\DeterminingTheOptimalPrice\Source.cpp(35,17): warning C4267: 'initializing': conversion from 'size_t' to 'const int', possible loss of data
+C:\CppProject\DeterminingTheOptimalPrice\DeterminingTheOptimalPrice\Source.cpp(42,20): warning C4244: '=': conversion from '__int64' to '_Ty', possible loss of data
+          with
+          [
+              _Ty=int
+          ]
+  DeterminingTheOptimalPrice.vcxproj -> C:\CppProject\DeterminingTheOptimalPrice\x64\Debug\DeterminingTheOptimalPrice.exe
